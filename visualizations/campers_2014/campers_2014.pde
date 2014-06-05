@@ -1,18 +1,21 @@
 import processing.pdf.*;
 
 boolean recordPdf = false;
-color cutColor = color(255, 0, 0);
 Table campers;
 int camperId = 0;
+float radiusInches = 2;
 
 void setup() {
-  size(400, 400);
+  size(500, 500);
+  //size((int)inches2Px(12), (int)inches2Px(12));
   campers = getCampers();
 }
 
 void draw(){
   
   background(255);
+  
+  drawRuler();
   
   drawCamper(camperId);
 
@@ -57,30 +60,30 @@ void drawCamper(int camperId){
   }
   
   // add camper name
-  fill(0);
-  text(camperName, 10, 10);
+  guideText();
+  text(camperName, inches2Px(0.5), inches2Px(0.5));
 
   // draw  
   pushMatrix();
   translate(width/2, height/2);
-  
-  // draw center
-  fill(255, 0, 0);
-  ellipse(0, 0, 10, 10);
+
+  // draw circle
+  vectorCut();  
+  ellipse(0, 0, inches2Px(radiusInches*2), inches2Px(radiusInches*2));
   
   // draw hometown
-  stroke(cutColor);
-  noFill();
+  vectorEtch();
   PVector homePos = location2Pos(distToHome, compassToHome);
-  ellipse(homePos.x, homePos.y, 10, 10);
-  text(hometown, homePos.x + 15, homePos.y);
+  ellipse(inches2Px(homePos.x), inches2Px(homePos.y), inches2Px(0.1), inches2Px(0.1));
+  rasterEtch();
+  text(hometown, inches2Px(homePos.x + 0.25), inches2Px(homePos.y));
   
   // draw current city
-  stroke(cutColor);
-  noFill();
+  vectorEtch();
   PVector currentCityPos = location2Pos(distToCurrentCity, compassToCurrentCity);
-  ellipse(currentCityPos.x, currentCityPos.y, 10, 10);
-  text(currentCity, currentCityPos.x + 15, currentCityPos.y);
+  ellipse(inches2Px(currentCityPos.x), inches2Px(currentCityPos.y), inches2Px(0.1), inches2Px(0.1));
+  rasterEtch();
+  text(currentCity, inches2Px(currentCityPos.x + 0.25), inches2Px(currentCityPos.y));
   
   // draw skills
   drawSkills(camper, skillNames);
@@ -117,17 +120,24 @@ void keyPressed(){
 }
 
 void drawSkills(TableRow camper, String[] skillNames){
-  stroke(cutColor);
-  noFill();
+  // draw shape
+  vectorEtch();
   beginShape();
   for(int i = 0; i < skillNames.length; i ++){
     float angleInDegrees = (i*1.0 / skillNames.length) * 360;
     float val = camper.getFloat(skillNames[i]);
     PVector pos = skill2Pos(val, angleInDegrees);
-    vertex(pos.x, pos.y);
-    text(skillNames[i], pos.x, pos.y + 15);
+    vertex(inches2Px(pos.x), inches2Px(pos.y));
   }  
   endShape(CLOSE);
+  // draw labels
+  for(int i = 0; i < skillNames.length; i ++){
+    float angleInDegrees = (i*1.0 / skillNames.length) * 360;
+    float val = 1;
+    PVector pos = skill2Pos(val, angleInDegrees);
+    rasterEtch();
+    text(skillNames[i].substring(0, 1), inches2Px(pos.x), inches2Px(pos.y));
+  }  
 }
 
 PVector location2Pos(float dist, float angleInDegrees){
@@ -135,17 +145,58 @@ PVector location2Pos(float dist, float angleInDegrees){
   x = r * cos(a)
   y = r * sin(a)
  */
- float x = map(dist, 0, 10000, 0, width/2) * cos(radians(angleInDegrees - 90));
- float y = map(dist, 0, 10000, 0, width/2) * sin(radians(angleInDegrees - 90));
+ float x = map(dist, 0, 7000, 0, radiusInches * .95) * cos(radians(angleInDegrees - 90));
+ float y = map(dist, 0, 7000, 0, radiusInches * .95) * sin(radians(angleInDegrees - 90));
  return new PVector(x, y);
 }
 
 PVector skill2Pos(float val, float angleInDegrees){
- float x = map(val, 0, 10, 50, width/2) * cos(radians(angleInDegrees - 90));
- float y = map(val, 0, 10, 50, width/2) * sin(radians(angleInDegrees - 90));
+ float x = map(val, 0, 10, 0.25, radiusInches * .95) * cos(radians(angleInDegrees - 90));
+ float y = map(val, 0, 10, 0.25, radiusInches * .95) * sin(radians(angleInDegrees - 90));
  return new PVector(x, y);
 }
 
 Table getCampers(){
     return loadTable(sketchPath("../../data/2014/campers.csv"), "header");
+}
+
+void drawRuler() {
+  textAlign(CENTER);
+  for(int i = 0; i < 10; i ++){
+    guide();
+    line(inches2Px(i), 0,  inches2Px(i), inches2Px(0.1));
+    guideText();
+    text(i, inches2Px(i), inches2Px(0.3));
+  }
+  textAlign(LEFT);
+}
+
+float inches2Px(float inches){
+  // see http://wiki.imal.org/howto/calculate-pdfwindow-size-processing
+  return inches * 72;
+}
+
+void vectorCut(){
+  noFill();
+  stroke(255, 0, 0);
+}
+
+void vectorEtch(){
+  noFill();
+  stroke(0, 0, 255);
+}
+
+void rasterEtch(){
+  fill(0, 0, 0);
+  noStroke();
+}
+
+void guide(){
+  noFill();
+  stroke(0, 255, 0);
+}
+
+void guideText(){
+  fill(0, 255, 0);
+  noStroke();
 }
