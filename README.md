@@ -1,10 +1,5 @@
 # Turning Data into Matter - ITP Camp 2014 workshop
 
-### Data collection
-
-Start by filling-out this form so we have the data for making everyone's artefact.  
-https://docs.google.com/forms/d/1sqPPwga_AOYW11jAbN_Yta4J-Eqfgci_fIIQi7HR4ZY/viewform?usp=send_form
-
 ### Step-by-step setup
 
 * Download Processing 2
@@ -30,9 +25,8 @@ https://docs.google.com/forms/d/1sqPPwga_AOYW11jAbN_Yta4J-Eqfgci_fIIQi7HR4ZY/vie
 * Books
   * Generativ Gestaltung
 * Other visualization tools
-  * languages
-    * D3.js
-  * software
-    * Raw
-    * Tableau
+  * collection of [various tools](http://selection.datavisualization.ch/)
+  * D3.js
+  * Raw
+  * Tableau
 * more soon!
