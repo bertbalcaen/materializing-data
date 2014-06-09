@@ -15,9 +15,11 @@
 
 ### Going further
 
-* Here's a personal project with more advanced Processing code that creates a final laser-cut form: 
+* EASY PEASY: project about mapping running data to a medal with similar Processing code that creates a final laser-cut artefact.
   * http://www.theworldneedsmoredreamers.net/personalized-medals-for-runners-v2/
-* And another personal Processing project that creates a 3D form instead, for 3D printing:
+* INTERMEDIATE: another Processing project that eases some GUI tools (graphical user interface) to have sliders in your sketch to control some parameters.
+  * 
+* ADVANCED: And another personal Processing project that creates a 3D form instead, for 3D printing.
   * http://www.theworldneedsmoredreamers.net/grenade-lamp/
 
 ### Resources
@@ -25,8 +27,15 @@
 * Books
   * Generativ Gestaltung
 * Other visualization tools
-  * collection of [various tools](http://selection.datavisualization.ch/)
-  * D3.js
-  * Raw
-  * Tableau
+  * pre-compiled collection of [various tools](http://selection.datavisualization.ch/)
+  * libraries:
+    * [Hemesh](http://www.creativeapplications.net/processing/hemesh-and-hemeshgui-processing/): 3D mesh generator
+    * [ga2csv](https://github.com/bertbalcaen/ga2csv): PHP script that translates Google Analytics data into CSV format. Was used in Bert's project to visualize GA data on a poster design.
+    * [PHP Simple Html Dom Parser](http://simplehtmldom.sourceforge.net/): PHP script to scrapper HTML data from a website. It's already in this repo, and was used for scraping the camper data from last year's camp.
+  * languages:
+    * [D3.js](http://d3js.org/): popular Javascript framework for building interactive dataviz projects. Used extensively by the New York Times.
+    * [Raw](): 
+    * Tableau
+* Data resources
+  * 
 * more soon!
