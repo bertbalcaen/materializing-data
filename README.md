@@ -27,4 +27,12 @@ https://docs.google.com/forms/d/1sqPPwga_AOYW11jAbN_Yta4J-Eqfgci_fIIQi7HR4ZY/vie
 
 ### Resources
 
-* coming soon!
+* Books
+  * Generativ Gestaltung
+* Other visualization tools
+  * languages
+    * D3.js
+  * software
+    * Raw
+    * Tableau
+* more soon!
