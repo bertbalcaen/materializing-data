@@ -56,6 +56,8 @@
   * http://www.estherstocker.net/
   * http://www.propublica.org/article/missing-in-action-us-military-slow-to-identify-service-members
   * http://moebio.com/
-* Books
+* Books/Learning
   * [Interactive Data Visualization](http://www.amazon.com/Interactive-Data-Visualization-Scott-Murray/dp/1449339735/ref=sr_1_1?ie=UTF8&qid=1402639190&sr=8-1&keywords=oreilly+data+visualization)
   * [Generative Design](http://www.amazon.com/Generative-Design-Visualize-Program-Processing/dp/1616890770/ref=sr_1_1?ie=UTF8&qid=1402639132&sr=8-1&keywords=generative+gestaltung)
+  * [The Nature of Code](http://natureofcode.com/)
+  * [The Nature of Code videos](http://vimeo.com/channels/natureofcode)
