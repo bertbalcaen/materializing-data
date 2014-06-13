@@ -34,8 +34,30 @@
     * [PHP Simple Html Dom Parser](http://simplehtmldom.sourceforge.net/): PHP script to scrapper HTML data from a website. It's already in this repo, and was used for scraping the camper data from last year's camp.
   * languages:
     * [D3.js](http://d3js.org/): popular Javascript framework for building interactive dataviz projects. Used extensively by the New York Times.
-    * [Raw](): 
-    * Tableau
+    * [DimpleJS] (http://dimplejs.org/)
+  * Software/Apps
+    * [Raw](http://app.raw.densitydesign.org/) 
+    * [Tableau] (http://www.tableausoftware.com/)
+    * [Repoter iOS app] (http://www.reporter-app.com/)
+    * [Insta-Mapper] (http://www.insta-mapper.com/)
 * Data resources
+  * [NYC OpenData](https://nycopendata.socrata.com/)
   * [World Bank Open Data](http://data.worldbank.org/): free and open access to data about development in countries around the globe.
-* more soon!
+* Mixed examples
+  * http://hci.stanford.edu/courses/cs547/abstracts/08-09/090213-heer.html : see video link at the bottom for a great intro to the field
+  * http://www.nytimes.com/newsgraphics/2013/12/30/year-in-interactive-storytelling/#dataviz
+  * http://moritz.stefaner.eu/
+  * http://giorgialupi.net/
+  * http://drones.pitchinteractive.com/
+  * http://infosthetics.com/
+  * http://iwantyoutowantme.org/movements.html
+  * http://www.wefeelfine.org/
+  * http://www.aviz.fr/Research/PassivePhysicalVisualizations
+  * http://candychang.com/before-i-die-in-nola/
+  * http://intuitionanalytics.com/other/inauguralSpeeches/
+  * http://www.estherstocker.net/
+  * http://www.propublica.org/article/missing-in-action-us-military-slow-to-identify-service-members
+  * http://moebio.com/
+* Books
+  * [Interactive Data Visualization](http://www.amazon.com/Interactive-Data-Visualization-Scott-Murray/dp/1449339735/ref=sr_1_1?ie=UTF8&qid=1402639190&sr=8-1&keywords=oreilly+data+visualization)
+  * [Generative Design](  * http://www.amazon.com/Generative-Design-Visualize-Program-Processing/dp/1616890770/ref=sr_1_1?ie=UTF8&qid=1402639132&sr=8-1&keywords=generative+gestaltung)
