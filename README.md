@@ -24,8 +24,6 @@
 
 ### Resources
 
-* Books
-  * Generativ Gestaltung
 * Other visualization tools
   * pre-compiled collection of [various tools](http://selection.datavisualization.ch/)
   * libraries:
@@ -60,4 +58,4 @@
   * http://moebio.com/
 * Books
   * [Interactive Data Visualization](http://www.amazon.com/Interactive-Data-Visualization-Scott-Murray/dp/1449339735/ref=sr_1_1?ie=UTF8&qid=1402639190&sr=8-1&keywords=oreilly+data+visualization)
-  * [Generative Design](  * http://www.amazon.com/Generative-Design-Visualize-Program-Processing/dp/1616890770/ref=sr_1_1?ie=UTF8&qid=1402639132&sr=8-1&keywords=generative+gestaltung)
+  * [Generative Design](http://www.amazon.com/Generative-Design-Visualize-Program-Processing/dp/1616890770/ref=sr_1_1?ie=UTF8&qid=1402639132&sr=8-1&keywords=generative+gestaltung)
