@@ -8,19 +8,15 @@
 * Download this code ("Download ZIP" button to the right)
 * Open the data file (/data/2014/campers.csv) and replace the data with your own. 
   * Be careful to remove whitespaces around commas, and to wrap strings in double quotes ("Firstname Lastname").
-* Run the sketch.
-* Press 'p' to create a PDF of the viz.
-* Put the PDF on a USB dongle and load it in the laser cutter (ask a councelor if necessary).
+* Run the sketch : /visualizations/campers_2014/campers_2014.pde
+* Press 'p' to generate a PDF of the sketch.
+* Put the PDF on a USB dongle and load it in the laser cutter (ask a councelor if necessary). Change the strokes 0.1 pt width.
 * Laser cut your stuff!
 
 ### Going further
 
-* EASY PEASY: project about mapping running data to a medal with similar Processing code that creates a final laser-cut artefact.
-  * http://www.theworldneedsmoredreamers.net/personalized-medals-for-runners-v2/
-* INTERMEDIATE: another Processing project that eases some GUI tools (graphical user interface) to have sliders in your sketch to control some parameters.
-  * 
-* ADVANCED: And another personal Processing project that creates a 3D form instead, for 3D printing.
-  * http://www.theworldneedsmoredreamers.net/grenade-lamp/
+* EASY: [project](http://www.theworldneedsmoredreamers.net/personalized-medals-for-runners-v2/) about mapping running data to a medal with similar Processing code that creates a final laser-cut artefact.
+* ADVANCED: And another [personal Processing project](http://www.theworldneedsmoredreamers.net/grenade-lamp/) that creates a 3D form instead, for 3D printing.
 
 ### Resources
 
@@ -43,8 +39,9 @@
   * Software/Apps
     * [Raw](http://app.raw.densitydesign.org/) : web app. Give it some data, and it will automagically produce embeddable charts for you. Chart types are limited but it's a good way to visualize your data quickly, to get a sense of it. Lacks basic chart types, oddly.
     * [Tableau Public](http://www.tableausoftware.com/public/) : desktop app used in workshops by Moritz Stefaner to quickly produce various types of charts of a dataset, to initially get a sense of the data. Never used it myself, but it is quite famous.
+    * [OpenPaths](https://www.openpaths.cc/) : mobile app fmor the New York Times that tracks your GPS position so you can export the data and use it for visualizations.
     * [Repoter iOS app](http://www.reporter-app.com/) : iOS app by Nicholas Felton that helps track data about where you are, what you doing, etc. Useful to build a large dataset about your everyday comings & goings, but slightly annoying.
-    * [Insta-Mapper](http://www.insta-mapper.com/) : iOS and Android app that tracks your GPS data constantly. Useful for collecting datasets of positioning data.
+    * [Insta-Mapper](http://www.insta-mapper.com/) : another mobile app that tracks your GPS data constantly.
 * Data resources
   * [NYC OpenData](https://nycopendata.socrata.com/) : bank of free data about NYC, from banks to government to housing.
   * [World Bank Open Data](http://data.worldbank.org/): bank of free data about innumerable topics of global development.
