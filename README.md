@@ -1,6 +1,6 @@
 # Turning Data into Matter - ITP Camp 2014 workshop
 
-### Step-by-step setup
+### Processing sketch - step-by-step setup
 
 * Download Processing 2
   * for OS X 16.8 Snow Leopard, use Processing 2.0.2: https://code.google.com/p/processing/downloads/list
@@ -12,6 +12,10 @@
 * Press 'p' to generate a PDF of the sketch.
 * Put the PDF on a USB dongle and load it in the laser cutter (ask a councelor if necessary). Change the strokes 0.1 pt width.
 * Laser cut your stuff!
+
+### Slides
+
+These are the slides shown in class. You can simply read the html of the .html files in the /slides/ folder for an idea of the topics covered. Or you can run the /slides/ folder as a website on your localhost. Ask a concellor or another camper for help setting that up :)
 
 ### Going further
 
